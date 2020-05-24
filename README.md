@@ -5,7 +5,7 @@ created with native WeChat Miniprogram code and zero packaging tool.
 ## Framework
 1. Native WeChat Mini Program (Base Library 2.11.0)
 
-## Third Party Libraries:
+## Dependent Libraries:
 1. State Management: [Omix](https://github.com/Tencent/omi/tree/master/packages/omix)
 
 ## Dev Libraries:
