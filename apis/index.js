@@ -9,22 +9,24 @@ function getApi(baseUrl, api) {
   return `${baseUrl}\\${API[api]}`;
 }
 
-async function getGetResponse(baseUrl, api) {
+async function getGetResponse(baseUrl, api, data) {
   return request({
     url: getApi(baseUrl, api),
-    methods: "GET",
+    method: "GET",
+    data: data,
   });
 }
 
-async function getPostResponse(baseUrl, api) {
+async function getPostResponse(baseUrl, api, data) {
   return request({
     url: getApi(baseUrl, api),
-    methods: "POST",
+    method: "POST",
+    data: data,
   });
 }
 
 module.exports = {
   getApi: getApi,
   getGetResponse: getGetResponse,
-  getPostResponse: getPostResponse
+  getPostResponse: getPostResponse,
 };
