@@ -25,6 +25,8 @@ created with native WeChat Miniprogram code and zero packaging tool.
 
 ## MVP Roadmap
 
+### .env
+
 ### 1. [Promise](https://developers.weixin.qq.com/miniprogram/dev/extended/utils/api-promise.html)
 ### 2. api.js
 ### 3. JD-like shopping experience
@@ -78,3 +80,8 @@ created with native WeChat Miniprogram code and zero packaging tool.
 
 # Consolidate Platform
 //
+
+
+# Dev logs
+## Week 1 (1/6/2020)
+- Wed: WeChat login
