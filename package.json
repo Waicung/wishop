@@ -1,0 +1,23 @@
+{
+  "name": "wishop",
+  "version": "1.0.0",
+  "description": "A Shopping UI for WeChat Mini Program\r created with native WeChat Miniprogram code and zero packaging tool.",
+  "main": "app.js",
+  "dependencies": {
+    "miniprogram-api-promise": "^1.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Waicung/wishop.git"
+  },
+  "author": "Waicung",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Waicung/wishop/issues"
+  },
+  "homepage": "https://github.com/Waicung/wishop#readme"
+}
