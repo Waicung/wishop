@@ -1,4 +1,9 @@
 /**app.wxss**/
+.page {
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+
 .container {
   height: 100%;
   display: flex;
@@ -7,4 +12,4 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}

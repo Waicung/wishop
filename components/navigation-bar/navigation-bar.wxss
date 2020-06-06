@@ -1,0 +1,28 @@
+/* components/navigation-bar/navigation-bar.wxss */
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.wi-navbar {
+  overflow-y: scroll;
+  white-space: nowrap;
+  width: calc(100% - 80rpx);
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  display: inline-block;
+  font-size: 24rpx;
+  padding-left: 18rpx;
+  padding-right: 18rpx;
+  padding-bottom: 9rpx;
+  padding-top: 9rpx;
+}
+
+.wi-dropdown {
+  width: 80rpx;
+  font-size: 40rpx;
+  text-align: center;
+}

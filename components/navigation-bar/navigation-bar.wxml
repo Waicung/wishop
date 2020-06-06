@@ -1,0 +1,11 @@
+<!--components/navigation-bar/navigation-bar.wxml-->
+<view class="container">
+  <view class="wi-navbar">
+    <view class="nav-item" wx:for="{{ list }}" wx:key="index">
+      <view class="nav-label">{{ item.text }}</view>
+    </view>
+  </view>
+  <view class="wi-dropdown">
+    ˅
+  </view>
+</view>

@@ -1,0 +1,19 @@
+/* components/banner/banner.wxss */
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+swiper {
+  width: 650rpx;
+  height: 400rpx;
+}
+
+swiper-item {
+  color: #000000;
+  height: 350px;
+}
+
+image {
+  display: inline;
+}
