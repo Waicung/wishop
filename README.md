@@ -85,7 +85,9 @@ created with native WeChat Miniprogram code and zero packaging tool.
 # Dev logs
 ## Week 1 (1/6/2020)
 - Wed,Thu: [WeChat login](https://developers.weixin.qq.com/community/develop/article/doc/000e0e173b85a85013397236c5bc13)
-- Fri: UI(WeUI based)-Tabbar
+- Fri: UI(WeUI based)-TabBar
+- Sat: UI(WeUI based)-SearchBar; NavigationBar; Banner
+- Sun: UI(WeUI based)-EventList
 
 # API Server backlogs
 - sessionId

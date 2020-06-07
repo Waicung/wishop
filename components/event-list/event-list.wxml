@@ -1,0 +1,8 @@
+<!--components/event-list/event-list.wxml-->
+<view class="container">
+  <view class="event-list">
+    <view class="event-item" wx:for="{{ list }}" wx:key="index">
+      <image class="event-icon" mode="aspectFit" src="{{ default }}"></image>
+    </view>
+  </view>
+</view>

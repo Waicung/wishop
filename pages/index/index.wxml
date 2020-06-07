@@ -8,4 +8,6 @@
   <wi-banner></wi-banner>
 </view>
 
-<view class="page"> </view>
+<view class="page">
+  <wi-eventlist></wi-eventlist>
+</view>
