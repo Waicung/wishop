@@ -10,4 +10,5 @@
 
 <view class="page">
   <wi-eventlist></wi-eventlist>
+  <wi-productlist></wi-productlist>
 </view>

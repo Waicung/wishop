@@ -46,6 +46,7 @@ Page({
   },
   onShow: function () {
     tabUpdate.call(this, 0);
+  
   },
   getUserInfo: function (e) {
     console.log(e);

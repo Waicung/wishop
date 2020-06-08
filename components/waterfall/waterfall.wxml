@@ -1,0 +1,7 @@
+<!--components/waterfall.wxml-->
+
+<view class="waterfall custom-class">
+  <view class="waterfall-inner">
+    <slot></slot>
+  </view>
+</view>

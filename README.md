@@ -89,5 +89,8 @@ created with native WeChat Miniprogram code and zero packaging tool.
 - Sat: UI(WeUI based)-SearchBar; NavigationBar; Banner
 - Sun: UI(WeUI based)-EventList
 
+## Week 2 (8/6/2020)
+- Mon: UI(WeUI based)-Waterfall-ProductList
+
 # API Server backlogs
 - sessionId

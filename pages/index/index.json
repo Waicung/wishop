@@ -3,6 +3,7 @@
     "mp-searchbar": "/miniprogram_npm/weui-miniprogram/searchbar/searchbar",
     "wi-navigationbar": "/components/navigation-bar/navigation-bar",
     "wi-banner": "/components/banner/banner",
-    "wi-eventlist": "/components/event-list/event-list"
+    "wi-eventlist": "/components/event-list/event-list",
+    "wi-productlist": "/components/product-list/product-list"
   }
 }

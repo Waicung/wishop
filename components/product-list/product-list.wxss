@@ -1,0 +1,6 @@
+/* components/product-list/product-list.wxss */
+.thumbnail {
+  width: 330rpx;
+  height: 330rpx;
+  display: block;
+}

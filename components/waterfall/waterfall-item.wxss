@@ -1,0 +1,4 @@
+/* components/waterfall-item/waterfall-item.wxss */
+.waterfall-item {
+  position: absolute;
+}

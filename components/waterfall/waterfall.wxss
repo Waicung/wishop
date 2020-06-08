@@ -1,0 +1,4 @@
+/* components/waterfall.wxss */
+.waterfall {
+  position: relative;
+}

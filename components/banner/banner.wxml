@@ -1,14 +1,19 @@
 <!--components/banner/banner.wxml-->
 <view class="container">
   <swiper
+    class="banner-swiper"
     indicator-dots="{{ indicatorDots }}"
     autoplay="{{ autoplay }}"
     interval="{{ interval }}"
     duration="{{ duration }}"
   >
     <block wx:for="{{ background }}" wx:key="*this">
-      <swiper-item>
-        <image mode="aspectFit" src="{{ default }}"></image>
+      <swiper-item class="banner-swiper-item">
+        <image
+          class="banner-image"
+          mode="aspectFit"
+          src="{{ default }}"
+        ></image>
       </swiper-item>
     </block>
   </swiper>

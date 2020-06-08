@@ -1,0 +1,15 @@
+<!--components/product-list/product-list.wxml-->
+<wi-waterfall loading="{{ loadMorePending }}" isAllLoaded="{{ isAllLoaded }}">
+  <block wx:for="{{ products }}" wx:key="id" wx:for-item="product">
+    <wi-waterfall-item index="{{ index }}" custom-class="flow-item-wrapper">
+      <view class="product-item">
+        <image
+          class="thumbnail"
+          mode="aspectFit"
+          src="{{ product.src }}"
+        ></image>
+        show
+      </view>
+    </wi-waterfall-item>
+  </block>
+</wi-waterfall>

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "wi-waterfall": "../waterfall/waterfall",
+    "wi-waterfall-item": "../waterfall/waterfall-item"
+  }
+}
