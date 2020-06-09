@@ -1,5 +1,8 @@
 // components/product-list/product-list.js
 import ENV from "../../env";
+import { getGetResponse } from "../../apis/apis";
+const DEFAULT_IMAGE = ENV.PLACE_HOLDERS.THUMBNAIL;
+
 Component({
   /**
    * 组件的属性列表
@@ -10,21 +13,31 @@ Component({
    * 组件的初始数据
    */
   data: {
+    default: DEFAULT_IMAGE,
     loadMorePending: false,
     isAllLoaded: true,
-    products: [
-      { id: 1, src: ENV.PLACE_HOLDERS.THUMBNAIL },
-      { id: 2, src: ENV.PLACE_HOLDERS.THUMBNAIL },
-      { id: 3, src: ENV.PLACE_HOLDERS.THUMBNAIL },
-      { id: 4, src: ENV.PLACE_HOLDERS.THUMBNAIL },
-      { id: 5, src: ENV.PLACE_HOLDERS.THUMBNAIL },
-      { id: 6, src: ENV.PLACE_HOLDERS.THUMBNAIL },
-      { id: 7, src: ENV.PLACE_HOLDERS.THUMBNAIL },
-    ],
+    products: [],
+    page: 1,
+  },
+
+  lifetimes: {
+    ready() {
+      this.getProducts();
+    },
   },
 
   /**
    * 组件的方法列表
    */
-  methods: {},
+  methods: {
+    getProducts() {
+      getGetResponse("products", {
+        _page: this.data.page,
+      }).then((res) => {
+        this.setData({
+          products: res.data,
+        });
+      });
+    },
+  },
 });

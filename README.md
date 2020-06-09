@@ -30,6 +30,7 @@ created with native WeChat Miniprogram code and zero packaging tool.
 ### 1. [Promise](https://developers.weixin.qq.com/miniprogram/dev/extended/utils/api-promise.html)
 ### 2. api.js
 ### 3. JD-like shopping experience
+- [Waterfall & infinite scroll](https://mp.weixin.qq.com/s/ZFVpNbmLEtZimZRxFD0Eow)
 - Product Search (filter)
 - Product display
 - Cart
@@ -60,7 +61,6 @@ created with native WeChat Miniprogram code and zero packaging tool.
 - [Package slimmer](https://github.com/wechat-miniprogram/miniprogram-slim)
 
 ## Next
-- [Waterfall & infinite scroll](https://mp.weixin.qq.com/s/ZFVpNbmLEtZimZRxFD0Eow)
 - Delay login
 - [Upgrade control](https://developers.weixin.qq.com/miniprogram/dev/framework/runtime/update-mechanism.html)
 - Various Promotion (algorithm on manipulating price)
@@ -91,6 +91,7 @@ created with native WeChat Miniprogram code and zero packaging tool.
 
 ## Week 2 (8/6/2020)
 - Mon: UI(WeUI based)-Waterfall-ProductList
+- Tue: UI(WeUI based)-Waterfall-ProductList-InfinityScroll
 
 # API Server backlogs
 - sessionId

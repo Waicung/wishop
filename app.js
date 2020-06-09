@@ -1,7 +1,7 @@
 //app.js
 import { promisifyAll } from "miniprogram-api-promise";
 // TODO change to es6 module
-import { getGetResponse } from "/apis/index";
+import { getGetResponse } from "/apis/apis";
 import ENV from "env";
 const wxp = {};
 promisifyAll(wx, wxp);
@@ -19,9 +19,13 @@ App({
       .then((res) => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
         if (res.code) {
-          getGetResponse(ENV.REMOTE_SERVER, "login", {
-            code: res.code,
-          })
+          getGetResponse(
+            "login",
+            {
+              code: res.code,
+            },
+            ENV.REMOTE_SERVER
+          )
             .then((res) => {
               if (res.statusCode === 200) {
                 console.log("登陆成功");

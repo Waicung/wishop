@@ -6,9 +6,10 @@
         <image
           class="thumbnail"
           mode="aspectFit"
-          src="{{ product.src }}"
+          src="{{ product.src ? product.src : default }}"
+          lazy-load="{{ true }}"
         ></image>
-        show
+        <text>{{ product.name }}</text>
       </view>
     </wi-waterfall-item>
   </block>

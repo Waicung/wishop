@@ -1,4 +1,4 @@
-export default {
+const DEFAULT_VALUE = {
   DEVELOPMENT: true,
   DEVELOPMENT_SERVER: "http://localhost:3000",
   REMOTE_SERVER: "https://apis.components.waicung.net",
@@ -8,3 +8,4 @@ export default {
     BANNER: "http://via.placeholder.com/650x400",
   },
 };
+export default DEFAULT_VALUE;
