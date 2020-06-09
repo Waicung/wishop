@@ -2,7 +2,7 @@
 <wi-waterfall loading="{{ loadMorePending }}" isAllLoaded="{{ isAllLoaded }}">
   <block wx:for="{{ products }}" wx:key="id" wx:for-item="product">
     <wi-waterfall-item index="{{ index }}" custom-class="flow-item-wrapper">
-      <view class="product-item">
+      <view wx:if="{{ product.id }}" class="product-item">
         <image
           class="thumbnail"
           mode="aspectFit"
@@ -11,6 +11,8 @@
         ></image>
         <text>{{ product.name }}</text>
       </view>
+      <!-- Placeholder -->
+      <image wx:else height="180"></image>
     </wi-waterfall-item>
   </block>
 </wi-waterfall>

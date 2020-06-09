@@ -9,6 +9,7 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse("button.open-type.getUserInfo"),
+    loading: false,
   },
   //事件处理函数
   bindViewTap: function () {
@@ -46,7 +47,6 @@ Page({
   },
   onShow: function () {
     tabUpdate.call(this, 0);
-  
   },
   getUserInfo: function (e) {
     console.log(e);
@@ -55,5 +55,17 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true,
     });
+  },
+
+  onReachBottom: function () {
+    this.setData({
+      loading: true,
+    });
+    wx.showToast({ title: "Loading" });
+  },
+
+  onLoaded: function () {
+    this.data.loading = false;
+    wx.hideToast();
   },
 });

@@ -12,7 +12,18 @@ Component({
   /**
    * 组件的属性列表
    */
-  properties: {},
+  properties: {
+    loading: {
+      type: Boolean,
+      default: false,
+    },
+    isAllLoaded: {
+      type: Boolean,
+      default: false,
+    },
+  },
+
+  observers: {},
 
   /**
    * 组件的初始数据

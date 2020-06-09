@@ -10,5 +10,5 @@
 
 <view class="page">
   <wi-eventlist></wi-eventlist>
-  <wi-productlist></wi-productlist>
+  <wi-productlist loading="{{loading}}" bindloaded="onLoaded"></wi-productlist>
 </view>

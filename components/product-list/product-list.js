@@ -7,8 +7,21 @@ Component({
   /**
    * 组件的属性列表
    */
-  properties: {},
+  properties: {
+    loading: {
+      type: Boolean,
+      default: false,
+    },
+  },
 
+  observers: {
+    loading: function (loading) {
+      // timestamp 被设置时，将它展示为可读时间字符串
+      if (loading) {
+        this.getProducts();
+      }
+    },
+  },
   /**
    * 组件的初始数据
    */
@@ -35,9 +48,16 @@ Component({
         _page: this.data.page,
       }).then((res) => {
         this.setData({
-          products: res.data,
+          products: this.appendProducts(res.data),
         });
+        this.data.page++;
+        this.triggerEvent("loaded");
       });
+    },
+    appendProducts(newProducts) {
+      const PlaceHolder = { name: "" };
+      //this.data.products.pop();
+      return this.data.products.concat(newProducts);
     },
   },
 });
