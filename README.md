@@ -3,6 +3,11 @@
 A Shopping UI for WeChat Mini Program
 created with native WeChat Miniprogram code and zero packaging tool.
 
+## Start
+### construct miniprogram_npm
+### start json-server
+### setup remote server(for wechat login)
+
 ## Framework
 
 1. Native WeChat Mini Program (Base Library 2.11.0)
