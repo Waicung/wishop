@@ -1,0 +1,10 @@
+<!--components/option-dialog/option-dialog.wxml-->
+<mp-halfScreenDialog
+  bindbuttontap="buttontap"
+  show="{{ show }}"
+  maskClosable="{{ false }}"
+  title="{{ title }}"
+  subTitle="{{ description }}"
+  buttons="{{ buttons }}"
+  ><slot></slot
+></mp-halfScreenDialog>

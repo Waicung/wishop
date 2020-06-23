@@ -19,6 +19,7 @@ created with native WeChat Miniprogram code and zero packaging tool.
 ## Dependent Libraries:
 
 1. State Management: [Omix](https://github.com/Tencent/omi/tree/master/packages/omix)
+2. Icon: [h2d2-shopicons](https://github.com/H2D2-Design/h2d2-shopicons/tree/master/PNG)
 
 ## Dev Libraries:
 
@@ -97,6 +98,10 @@ created with native WeChat Miniprogram code and zero packaging tool.
 ## Week 2 (8/6/2020)
 - Mon: UI(WeUI based)-Waterfall-ProductList
 - Tue: UI(WeUI based)-Waterfall-ProductList-InfinityScroll
+- Wed: UI(WeUI based)-Product-mock JD UI-Gallery
+
+## Week 3 (15/6/2020)
+- Fri: UI(WeUI based)-Product-mock JD UI
 
 # API Server backlogs
 - sessionId

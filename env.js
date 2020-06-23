@@ -5,6 +5,7 @@ const DEFAULT_VALUE = {
   PLACE_HOLDERS: {
     ICON: "http://via.placeholder.com/50x50",
     THUMBNAIL: "http://via.placeholder.com/200x200",
+    IMAGE: "http://via.placeholder.com/650x650",
     BANNER: "http://via.placeholder.com/650x400",
   },
 };

@@ -6,6 +6,7 @@ const defaultServer = ENV.DEVELOPMENT_SERVER;
 const API = {
   login: "mplogin",
   products: "products",
+  product: "product",
 };
 
 export default function getApi(api, baseUrl = defaultServer) {

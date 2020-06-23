@@ -1,0 +1,60 @@
+<!--pages/product/product.wxml-->
+<view class="product-navbar">
+  <navigator
+    class="navbar-item"
+    wx:for="{{ navbarItems }}"
+    wx:key="*this"
+    hover-class="navbar-item__selected"
+  >
+    {{ item }}
+  </navigator>
+</view>
+<swiper class="product-swiper">
+  <swiper-item wx:for="{{ product.gallery }}" wx:key="index">
+    <image class="product-image" mode="aspectFit" src="{{ item }}"></image>
+  </swiper-item>
+</swiper>
+<view class="product-pricetag"> ￥{{ product.price }} </view>
+<view class="product-name">
+  <text>{{ product.name }}</text>
+</view>
+<view class="product-description">
+  <text>{{ product.description }}</text>
+</view>
+<view class="product-options" bindtap="open">
+  <h6>已选</h6>
+  <view>已选项目组合</view>
+  <view>···</view>
+</view>
+<view class="product-delivery"></view>
+<view class="product-comment"></view>
+<view class="product-related"></view>
+<view class="product-details"></view>
+
+<!-- Bottom Navbar -->
+<view class="wi-navbar__bottom">
+  <navigator
+    class="navbar-item"
+    wx:for="{{ bottomNavbarItems }}"
+    wx:key="*this"
+    hover-class="navbar-item__selected"
+  >
+    <view class="navbar-icon"
+      ><image src="{{ item.icon }}" mode="aspectFit"></image
+    ></view>
+    <view
+      ><text>{{ item.text }}</text></view
+    >
+  </navigator>
+  <button
+    class="navbar-btn"
+    wx:for="{{ bottomNavbarBtns }}"
+    wx:key="*this"
+    type="{{ item.type }}"
+  >
+    {{ item.text }}
+  </button>
+</view>
+
+<!-- product options -->
+<wi-option show="{{ displayOption }}" title="{{ product.name }}"></wi-option>
