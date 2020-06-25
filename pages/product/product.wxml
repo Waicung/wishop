@@ -24,11 +24,34 @@
 <view class="product-related"></view>
 <view class="product-details"></view>
 
+<!-- product options -->
+<wi-option show="{{ displayOption }}" title="{{ product.name }}"></wi-option>
+
+<!-- product comment-->
+<wi-comment>
+  <view class="comment-item" wx:for="{{ topComments }}">
+    <view class="commentator-info">
+      <image class="comment-avatar" src="{{ item.avatar }}"></image>
+      <text>{{ item.name }}</text>
+      <text>{{ item.stars }}</text>
+      <text>{{ item.date }}</text>
+    </view>
+    <view class="comment-content">
+      {{ item.content }}
+    </view>
+    <view class="comment-gallery">
+      <image
+        class="comment-avatar"
+        wx:for="  {{ item.gallery }}"
+        wx:for-item="image"
+        src="{{ image.avatar }}"
+      ></image>
+    </view>
+  </view>
+</wi-comment>
+
 <!-- Bottom Navbar -->
 <wi-bottom-navbar
   bottomNavbarItems="{{ bottomNavbarItems }}"
   bottomNavbarBtns="{{ bottomNavbarBtns }}"
 ></wi-bottom-navbar>
-
-<!-- product options -->
-<wi-option show="{{ displayOption }}" title="{{ product.name }}"></wi-option>

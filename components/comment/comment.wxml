@@ -1,0 +1,10 @@
+<!--components/comment/comment.wxml-->
+<view class="wi-comment-container">
+  <view class="header-section">
+    <h2>评论</h2>
+    <span class="positive-ratio">好评率100%</span>
+  </view>
+  <view class="content-snapshot">
+    <slot></slot>
+  </view>
+</view>

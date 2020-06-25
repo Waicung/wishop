@@ -1,0 +1,4 @@
+/* components/comment/comment.wxss */
+.positive-ratio {
+  float: right;
+}

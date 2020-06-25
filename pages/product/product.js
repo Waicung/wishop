@@ -41,6 +41,7 @@ Page({
     ],
     navSelected: 0,
     displayOption: false,
+    topComments: []
   },
 
   open: function () {
@@ -54,9 +55,16 @@ Page({
    */
   onLoad: function (options) {
     options.productId = 1;
+    /* Load product info */
     getGetResponse("product", { id: options.productId }).then((res) => {
       this.setData({
         product: res.data[0],
+      });
+    });
+    /* Load comment info */
+    getGetResponse("comments", { id: options.productId, limit:2 }).then((res) => {
+      this.setData({
+        topComments: res.data[0],
       });
     });
   },
