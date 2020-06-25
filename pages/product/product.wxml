@@ -25,29 +25,10 @@
 <view class="product-details"></view>
 
 <!-- Bottom Navbar -->
-<view class="wi-navbar__bottom">
-  <navigator
-    class="navbar-item"
-    wx:for="{{ bottomNavbarItems }}"
-    wx:key="*this"
-    hover-class="navbar-item__selected"
-  >
-    <view class="navbar-icon"
-      ><image src="{{ item.icon }}" mode="aspectFit"></image
-    ></view>
-    <view
-      ><text>{{ item.text }}</text></view
-    >
-  </navigator>
-  <button
-    class="navbar-btn"
-    wx:for="{{ bottomNavbarBtns }}"
-    wx:key="*this"
-    type="{{ item.type }}"
-  >
-    {{ item.text }}
-  </button>
-</view>
+<wi-bottom-navbar
+  bottomNavbarItems="{{ bottomNavbarItems }}"
+  bottomNavbarBtns="{{ bottomNavbarBtns }}"
+></wi-bottom-navbar>
 
 <!-- product options -->
 <wi-option show="{{ displayOption }}" title="{{ product.name }}"></wi-option>

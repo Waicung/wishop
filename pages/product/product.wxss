@@ -4,41 +4,6 @@
   padding-bottom: 10rpx;
 }
 
-.wi-navbar__bottom {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.wi-navbar__bottom {
-  position: absolute;
-  bottom: 0;
-  font-size: 14px;
-}
-
-.wi-navbar__bottom .navbar-icon image {
-  width: 23px;
-  height: 23px;
-  vertical-align: bottom;
-}
-
-.wi-navbar__bottom .navbar-item {
-  width: calc(30% / 2);
-  text-align: center;
-  font-size: 14px;
-}
-
-.wi-navbar__bottom .navbar-btn {
-  border-radius: 0;
-  width: calc(70% / 2);
-  vertical-align: middle;
-  font-size: 14px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0;
-}
-
 .product-swiper {
   width: 750rpx;
   height: 750rpx;

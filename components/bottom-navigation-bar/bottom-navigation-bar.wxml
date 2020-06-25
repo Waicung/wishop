@@ -1,0 +1,30 @@
+<!--components/bottom-navigation-bar/bottom-navigation-bar.wxml-->
+<view class="wi-navbar__bottom">
+  <view
+    class="navbar-item"
+    wx:for="{{ bottomNavbarItems }}"
+    wx:key="index"
+    hover-class="navbar-item__selected"
+    data-button="false"
+    data-index="{{ index }}"
+    bindtab="tabNav"
+  >
+    <view class="navbar-icon">
+      <image src="{{ item.icon }}" mode="aspectFit"></image>
+    </view>
+    <view
+      ><text>{{ item.text }}</text></view
+    >
+  </view>
+  <button
+    class="navbar-btn"
+    wx:for="{{ bottomNavbarBtns }}"
+    wx:key="index"
+    type="{{ item.type }}"
+    data-button="true"
+    data-index="{{ index }}"
+    bindtab="tabNav"
+  >
+    {{ item.text }}
+  </button>
+</view>

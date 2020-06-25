@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "wi-option": "/components/option-dialog/option-dialog",
-    "wi-navbar": "/components/single-page-navigation-bar/single-page-navigation-bar"
+    "wi-navbar": "/components/single-page-navigation-bar/single-page-navigation-bar",
+    "wi-bottom-navbar": "/components/bottom-navigation-bar/bottom-navigation-bar"
   }
 }
