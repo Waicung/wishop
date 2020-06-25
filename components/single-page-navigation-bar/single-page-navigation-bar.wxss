@@ -1,0 +1,23 @@
+/* components/single-page-navigation-bar/single-page-navigation-bar.wxss */
+.single-page-navigation-bar {
+  display: flex;
+}
+
+.navbar-item__selected {
+  color: #43b37b;
+}
+
+.navbar-item {
+  width: 25%;
+  text-align: center;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.navbar-item.first-child {
+  border-left: 0;
+}
+
+.navbar-item.last-child {
+  border-right: 0;
+}

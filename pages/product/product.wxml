@@ -1,13 +1,6 @@
 <!--pages/product/product.wxml-->
-<view class="product-navbar">
-  <navigator
-    class="navbar-item"
-    wx:for="{{ navbarItems }}"
-    wx:key="*this"
-    hover-class="navbar-item__selected"
-  >
-    {{ item }}
-  </navigator>
+<view class="product-sg-navbar">
+  <wi-navbar navbarItems="{{ navbarItems }}"></wi-navbar>
 </view>
 <swiper class="product-swiper">
   <swiper-item wx:for="{{ product.gallery }}" wx:key="index">

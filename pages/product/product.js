@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    navbarItems: ["商品", "评价", "详情", "推荐"],
+    navbarItems: [{extraClass:"first-child",text:"商品"}, {extraClass:"",text:"评价"}, {extraClass:"",text:"详情"}, {extraClass:"last-child",text:"推荐"}],
     bottomNavbarItems: [
       {
         type: "icon",

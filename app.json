@@ -1,10 +1,5 @@
 {
-  "pages": [
-    "pages/index/index",
-    "pages/product/product",
-    "pages/logs/logs"
-
-  ],
+  "pages": ["pages/product/product", "pages/index/index", "pages/logs/logs"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
@@ -21,7 +16,8 @@
     "color": "#000000",
     "selectedColor": "#000000",
     "backgroundColor": "#ffffff",
-    "list": [{
+    "list": [
+      {
         "pagePath": "pages/index/index",
         "text": "主页"
       },

@@ -1,0 +1,13 @@
+<!--components/single-page-navigation-bar/single-page-navigation-bar.wxml-->
+<view class="single-page-navigation-bar">
+  <view
+    class="navbar-item {{ item.extraClass }}"
+    wx:for="{{ navbarItems }}"
+    wx:key="item.text"
+    hover-class="navbar-item__selected"
+    bindtap="tabNav"
+    data-index="{{ index }}"
+  >
+    {{ item.text }}
+  </view>
+</view>
