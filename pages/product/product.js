@@ -7,7 +7,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    navbarItems: [{extraClass:"first-child",text:"商品"}, {extraClass:"",text:"评价"}, {extraClass:"",text:"详情"}, {extraClass:"last-child",text:"推荐"}],
+    navbarItems: [
+      { extraClass: "first-child", text: "商品" },
+      { extraClass: "", text: "评价" },
+      { extraClass: "", text: "详情" },
+      { extraClass: "last-child", text: "推荐" },
+    ],
     bottomNavbarItems: [
       {
         type: "icon",
@@ -49,7 +54,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(ICONS("chat"));
     options.productId = 1;
     getGetResponse("product", { id: options.productId }).then((res) => {
       this.setData({

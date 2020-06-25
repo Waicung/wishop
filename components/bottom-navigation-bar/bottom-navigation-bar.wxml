@@ -10,7 +10,7 @@
     bindtab="tabNav"
   >
     <view class="navbar-icon">
-      <image src="{{ item.icon }}" mode="aspectFit"></image>
+      <image src="{{ item.icon }}" mode="aspectFit" class="navbar-icon__image"></image>
     </view>
     <view
       ><text>{{ item.text }}</text></view

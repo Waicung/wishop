@@ -1,4 +1,1 @@
 /* components/option-dialog/option-dialog.wxss */
-button {
-  margin: 0;
-}

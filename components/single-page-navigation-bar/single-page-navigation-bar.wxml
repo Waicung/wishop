@@ -3,7 +3,7 @@
   <view
     class="navbar-item {{ item.extraClass }}"
     wx:for="{{ navbarItems }}"
-    wx:key="item.text"
+    wx:key="text"
     hover-class="navbar-item__selected"
     bindtap="tabNav"
     data-index="{{ index }}"

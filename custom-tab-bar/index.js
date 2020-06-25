@@ -33,8 +33,5 @@ Component({
       });
     },
   },
-  attached: function () {
-    console.log("tabbar attached");
-    console.log("current:", this.data.selected);
-  },
+  attached: function () {},
 });

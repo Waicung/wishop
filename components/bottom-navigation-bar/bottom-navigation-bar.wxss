@@ -12,7 +12,7 @@
   font-size: 14px;
 }
 
-.wi-navbar__bottom .navbar-icon image {
+.wi-navbar__bottom .navbar-icon .navbar-icon__image {
   width: 23px;
   height: 23px;
   vertical-align: bottom;
