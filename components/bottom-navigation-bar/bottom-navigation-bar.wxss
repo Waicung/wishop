@@ -7,8 +7,6 @@
 }
 
 .wi-navbar__bottom {
-  position: absolute;
-  bottom: 0;
   font-size: 14px;
 }
 

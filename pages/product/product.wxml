@@ -31,16 +31,23 @@
 <wi-comment>
   <view class="comment-item" wx:for="{{ topComments }}">
     <view class="commentator-info">
-      <image class="comment-avatar" src="{{ item.avatar }}"></image>
+      <image
+        style="width: 20px; height: 20px;"
+        class="comment-avatar"
+        src="{{ item.avatar }}"
+        width="20"
+        mode="aspectFit"
+      ></image>
       <text>{{ item.name }}</text>
       <text>{{ item.stars }}</text>
-      <text>{{ item.date }}</text>
+      <text class="comment-date">{{ item.date }}</text>
     </view>
     <view class="comment-content">
       {{ item.content }}
     </view>
     <view class="comment-gallery">
       <image
+        style="width: 50px; height: 50px;"
         class="comment-image"
         wx:for="{{ item.gallery }}"
         wx:key="*this"
@@ -51,7 +58,9 @@
 </wi-comment>
 
 <!-- Bottom Navbar -->
-<wi-bottom-navbar
-  bottomNavbarItems="{{ bottomNavbarItems }}"
-  bottomNavbarBtns="{{ bottomNavbarBtns }}"
-></wi-bottom-navbar>
+<view class="wi-bottom-navbar">
+  <wi-bottom-navbar
+    bottomNavbarItems="{{ bottomNavbarItems }}"
+    bottomNavbarBtns="{{ bottomNavbarBtns }}"
+  ></wi-bottom-navbar>
+</view>
