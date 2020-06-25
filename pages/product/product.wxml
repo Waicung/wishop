@@ -41,10 +41,10 @@
     </view>
     <view class="comment-gallery">
       <image
-        class="comment-avatar"
-        wx:for="  {{ item.gallery }}"
-        wx:for-item="image"
-        src="{{ image.avatar }}"
+        class="comment-image"
+        wx:for="{{ item.gallery }}"
+        wx:key="*this"
+        src="{{ item }}"
       ></image>
     </view>
   </view>

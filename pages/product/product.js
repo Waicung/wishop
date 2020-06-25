@@ -41,7 +41,7 @@ Page({
     ],
     navSelected: 0,
     displayOption: false,
-    topComments: []
+    topComments: [],
   },
 
   open: function () {
@@ -62,9 +62,11 @@ Page({
       });
     });
     /* Load comment info */
-    getGetResponse("comments", { id: options.productId, limit:2 }).then((res) => {
+    getGetResponse("comments", {
+      _limit: 3,
+    }).then((res) => {
       this.setData({
-        topComments: res.data[0],
+        topComments: res.data,
       });
     });
   },

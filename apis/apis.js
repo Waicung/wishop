@@ -7,6 +7,7 @@ const API = {
   login: "mplogin",
   products: "products",
   product: "product",
+  comments: "comments",
 };
 
 export default function getApi(api, baseUrl = defaultServer) {
