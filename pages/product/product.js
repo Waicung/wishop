@@ -50,6 +50,13 @@ Page({
     });
   },
 
+  scrollTo: function () {
+    wx.pageScrollTo({
+      selector: ".comment-item",
+      duration: 0,
+    });
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

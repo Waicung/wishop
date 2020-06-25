@@ -1,6 +1,6 @@
 <!--pages/product/product.wxml-->
 <view class="product-sg-navbar">
-  <wi-navbar navbarItems="{{ navbarItems }}"></wi-navbar>
+  <wi-navbar navbarItems="{{ navbarItems }}" bindtabitem="scrollTo"></wi-navbar>
 </view>
 <swiper class="product-swiper">
   <swiper-item wx:for="{{ product.gallery }}" wx:key="index">
@@ -29,7 +29,7 @@
 
 <!-- product comment-->
 <wi-comment>
-  <view class="comment-item" wx:for="{{ topComments }}">
+  <view class="comment-item" wx:for="{{ topComments }}" wx:key="id">
     <view class="commentator-info">
       <image
         style="width: 20px; height: 20px;"
