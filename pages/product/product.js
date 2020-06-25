@@ -44,7 +44,6 @@ Page({
   },
 
   open: function () {
-    console.log("open");
     this.setData({
       displayOption: true,
     });
