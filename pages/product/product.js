@@ -10,8 +10,8 @@ Page({
     navbarItems: [
       { extraClass: "first-child", text: "商品" },
       { extraClass: "", text: "评价" },
-      { extraClass: "", text: "详情" },
-      { extraClass: "last-child", text: "推荐" },
+      { extraClass: "last-child", text: "详情" },
+      /*       { extraClass: "last-child", text: "推荐" }, */
     ],
     bottomNavbarItems: [
       {

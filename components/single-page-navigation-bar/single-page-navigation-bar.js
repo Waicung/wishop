@@ -41,4 +41,13 @@ Component({
       this.triggerEvent("tabitem", e.target.dataset.index);
     },
   },
+  lifetimes: {
+    attached: function () {
+      // 在组件实例进入页面节点树时执行
+      let width = 100 / this.data.navbarItems.length;
+      this.setData({
+        width: "width:" + width + "%",
+      });
+    },
+  },
 });

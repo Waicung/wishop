@@ -7,6 +7,7 @@
     hover-class="navbar-item__selected"
     bindtap="tabNav"
     data-index="{{ index }}"
+    style="{{ width }}"
   >
     {{ item.text }}
   </view>
