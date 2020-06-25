@@ -1,5 +1,6 @@
 // components/bottom-navigation-bar/bottom-navigation-bar.js
 import ICONS from "../../apis/icons";
+
 Component({
   /**
    * 组件的属性列表
@@ -52,13 +53,9 @@ Component({
       if (e.target.dataset.button) {
         console.log("Tab on Bottom Nav Button:" + e.target.dataset.index);
       } else {
-        console.log("Tab on Bottom Nav Item:" + e.target.dataset.index);
+        console.log("Tab on Bottom Nav Item:" + e.currentTarget.dataset.index);
       }
       this.triggerEvent("tabNav", e.target.dataset);
-    },
-    tabNav: function (e) {
-      console.log("tab nav item index:" + e.target.dataset.index);
-      this.triggerEvent("tabitem", e.target.dataset.index);
     },
   },
 });

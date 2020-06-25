@@ -7,10 +7,14 @@
     hover-class="navbar-item__selected"
     data-button="false"
     data-index="{{ index }}"
-    bindtab="tabNav"
+    bindtap="tabNavItem"
   >
     <view class="navbar-icon">
-      <image src="{{ item.icon }}" mode="aspectFit" class="navbar-icon__image"></image>
+      <image
+        src="{{ item.icon }}"
+        mode="aspectFit"
+        class="navbar-icon__image"
+      ></image>
     </view>
     <view
       ><text>{{ item.text }}</text></view
@@ -23,7 +27,7 @@
     type="{{ item.type }}"
     data-button="true"
     data-index="{{ index }}"
-    bindtab="tabNav"
+    bindtap="tabNavItem"
   >
     {{ item.text }}
   </button>
